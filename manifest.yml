@@ -2,7 +2,7 @@
 language: python
 default_versions:
 - name: python
-  version: 3.8.x
+  version: 3.7.3
 dependency_deprecation_dates:
 - version_line: 4.7.x
   name: miniconda3
@@ -96,6 +96,14 @@ dependencies:
   - cflinuxfs3
   source: https://www.python.org/ftp/python/3.6.12/Python-3.6.12.tgz
   source_sha256: 12dddbe52385a0f702fb8071e12dcc6b3cb2dde07cd8db3ed60e90d90ab78693
+- name: python
+  version: 3.7.3
+  uri: https://buildpacks.cloudfoundry.org/dependencies/python/python-3.7.3-linux-x64-cflinuxfs3-827f07e1.tgz
+  sha256: 827f07e197aead8bd7f2a6387db97b956dd258262108a2ef893a16669682858c
+  cf_stacks:
+  - cflinuxfs3
+  source: https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
+  source_sha256: d62e3015f2f89c970ac52343976b406694931742fbde2fed8d1ce8ebb4e1f8ff
 - name: python
   version: 3.7.8
   uri: https://buildpacks.cloudfoundry.org/dependencies/python/python_3.7.8_linux_x64_cflinuxfs3_e98a931c.tgz
