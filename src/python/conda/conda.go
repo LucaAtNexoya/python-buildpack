@@ -126,7 +126,7 @@ func (c *Conda) UpdateAndClean() error {
 	if err := c.Command.Execute("/", indentWriter(os.Stdout), indentWriter(os.Stderr), filepath.Join(condaHome, "bin", "conda"), args...); err != nil {
 		return fmt.Errorf("Could not run conda env update: %v", err)
 	}
-	if err := c.Command.Execute("/", indentWriter(os.Stdout), indentWriter(os.Stderr), filepath.Join(condaHome, "bin", "conda"), "clean", "-pt"); err != nil {
+	if err := c.Command.Execute("/", indentWriter(os.Stdout), indentWriter(os.Stderr), filepath.Join(condaHome, "bin", "conda"), "clean", "-t"); err != nil {
 		c.Log.Error("Could not run conda clean: %v", err)
 		return fmt.Errorf("Could not run conda clean: %v", err)
 	}
