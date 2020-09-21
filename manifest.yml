@@ -42,8 +42,8 @@ dependencies:
   source: https://launchpad.net/libmemcached/1.0/1.0.18/+download/libmemcached-1.0.18.tar.gz
   source_sha256: e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82
 - name: miniconda3
-  uri: https://github.com/conda-forge/miniforge/releases/download/4.8.5-1/Miniforge-pypy3-4.8.5-1-Linux-aarch64.sh
-  sha256: 16b7fdd4da078db8ea86fa15262f32111fcbb7ee7692c8b21da4840e32a7aebf
+  uri: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  sha256: 879457af6a0bf5b34b48c12de31d4df0ee2f06a8e68768e5758c3293b2daf688
   cf_stacks:
   - cflinuxfs3
   source: https://github.com/conda/conda/archive/4.7.12.1.tar.gz
@@ -129,13 +129,13 @@ dependencies:
   source: https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
   source_sha256: 015115023c382eb6ab83d512762fe3c5502fa0c6c52ffebc4831c4e1a06ffc49
 - name: setuptools
-  version: 49.6.0
-  uri: https://buildpacks.cloudfoundry.org/dependencies/setuptools/setuptools_49.6.0_linux_noarch_any-stack_2c209f87.zip
-  sha256: 2c209f871654788c98a28c6d02c9db04531f395b72c40c4895dcdc09f851aefa
+  version: 50.3.0
+  uri: https://buildpacks.cloudfoundry.org/dependencies/setuptools/setuptools_50.3.0_linux_noarch_any-stack_e241888b.zip
+  sha256: e241888bda442387fd48385d26818cf3922d9462dec85c1f17620afdf11e7391
   cf_stacks:
   - cflinuxfs3
-  source: https://files.pythonhosted.org/packages/38/cc/db23dbe4efc464c3c0111fedf7d46de8888f05b09488d610f6f8ab6e2544/setuptools-49.6.0.zip
-  source_sha256: 46bd862894ed22c2edff033c758c2dc026324788d758e96788e8f7c11f4e9707
+  source: https://files.pythonhosted.org/packages/7c/1b/9b68465658cda69f33c31c4dbd511ac5648835680ea8de87ce05c81f95bf/setuptools-50.3.0.zip
+  source_sha256: 39060a59d91cf5cf403fa3bacbb52df4205a8c3585e0b9ba4b30e0e19d4c4b18
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
